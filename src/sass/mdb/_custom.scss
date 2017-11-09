@@ -1,0 +1,220 @@
+//
+// Custom variables
+//
+
+// Buttons:
+$mdb-btn-font-size-base: 12px !default;
+$mdb-btn-font-size-lg: 14px !default;
+$mdb-btn-font-size-sm: 11px !default;
+$mdb-btn-font-size-xs: 10px !default;
+
+// Shadows:
+$mdb-shadow-key-umbra-opacity: 0.2 !default;
+$mdb-shadow-key-penumbra-opacity: 0.14 !default;
+$mdb-shadow-ambient-shadow-opacity: 0.12 !default;
+
+// Border-radius:
+$border-radius-base: 3px !default;
+$border-radius-small: 2px !default;
+$border-radius-huge: 10px !default;
+$border-radius-extreme: 30px !default;
+
+//
+// Custom SCSS
+//
+
+/* Shadow Effects */
+// Layout customization
+.main {
+	border-radius: $border-radius-base * 2;
+    @include shadow-16dp();
+}
+
+.main-raised{
+    margin: -60px 30px 0px;
+    border-radius: $border-radius-base * 2;
+    @include shadow-16dp();
+}
+
+// Navbar customization
+.navbar {
+	@include shadow-big-navbar();
+}
+
+// Card customization
+.card {
+    @include shadow-2dp();
+}
+
+.card-raised {
+    @include shadow-big();
+}
+
+.card-fadeInUp {
+    transition: 0.5s;
+	@include shadow-2dp();
+
+    &:hover {
+        transform: scale(1.05);
+        @include shadow-big-navbar();
+    }
+}
+
+// Button customization
+.btn {
+	@include shadow-2dp();
+}
+
+// Image customization
+.img-raised {
+	@include shadow-big();
+}
+
+/* Center Align */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    p {
+        margin: 0;
+    }
+    ul {
+        text-align: center;
+        li {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Dividers */
+// Dividers light and dark variations
+.hr-light {
+    background-color: #fff;
+    height: 0.5px;
+}
+
+.hr-dark {
+    background-color: #666;
+    height: 0.5px;
+}
+
+// Divider with title
+.divider-old {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    h2 {
+        margin-top: 5px;
+    }
+    &:before {
+        content: '';
+        height: 1.5px;
+        background: #666;
+        flex: 1;
+        margin: 0 .45em 0 0;
+    }
+    &:after {
+        content: '';
+        height: 1.5px;
+        background: #666;
+        flex: 1;
+        margin: 0 0 0 .45em;
+    }
+}
+
+.divider-new {
+    @extend .divider-old;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+/* Responsive Headings */
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 768px) {
+    .h1-responsive {
+        font-size: 150%;
+        font-weight: 500;
+    }
+    .h2-responsive {
+        font-size: 145%;
+    }
+    .h3-responsive {
+        font-size: 135%;
+    }
+    .h4-responsive {
+        font-size: 135%;
+    }
+    .h5-responsive {
+        font-size: 135%;
+    }
+}
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .h1-responsive {
+        font-size: 170%;
+    }
+    .h2-responsive {
+        font-size: 140%;
+    }
+    .h3-responsive {
+        font-size: 125%;
+    }
+    .h4-responsive {
+        font-size: 125%;
+    }
+    .h5-responsive {
+        font-size: 125%;
+    }
+}
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .h1-responsive {
+        font-size: 200%;
+    }
+    .h2-responsive {
+        font-size: 170%;
+    }
+    .h3-responsive {
+        font-size: 140%;
+    }
+    .h4-responsive {
+        font-size: 125%;
+    }
+    .h5-responsive {
+        font-size: 125%;
+    }
+}
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .h1-responsive {
+        font-size: 250%;
+    }
+    .h2-responsive {
+        font-size: 200%;
+    }
+    .h3-responsive {
+        font-size: 170%;
+    }
+    .h4-responsive {
+        font-size: 140%;
+    }
+    .h5-responsive {
+        font-size: 125%;
+    }
+}

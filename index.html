@@ -1,265 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Shinchon Kyunghee OMC</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="style.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Shinchon Kyunghee OMC</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Effect CSS -->
+	<link rel="stylesheet" href="assets/css/lightbox.min.css">
+	<link rel="stylesheet" href="assets/css/mdb.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body class="front-page">
 
-<body>
+	<!-- NAVIGATION MENUS
+    ====================================================== -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-pink scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clinic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Treatment</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-search"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <!--Main Navigation-->
-    <header>
 
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark indigo">
-            <div class="container">
+	<!-- SECTION 1 : Top Boxes
+	====================================================== -->
+	<section id="frontTopBoxes" class="mt-5 wow fadeInDown" data-wow-duration="1.5s">
+		<div class="section-content">
+			<div class="container-fluid">
+				<div class="row">
 
-                <!-- Navbar brand -->
-                <a class="navbar-brand" href="#">Navbar</a>
+					<div class="boxLeft slide col-lg-8 mt-4">
 
-                <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<!--Carousel Wrapper-->
+						<div id="carousel-front" class="carousel slide carousel-fade" data-ride="carousel">
+						    <!--Indicators-->
+						    <ol class="carousel-indicators">
+						        <li data-target="#carousel-front" data-slide-to="0" class="active"></li>
+						        <li data-target="#carousel-front" data-slide-to="1"></li>
+						        <li data-target="#carousel-front" data-slide-to="2"></li>
+						    </ol>
+						    <!--/.Indicators-->
+						    <!--Slides-->
+						    <div class="carousel-inner" role="listbox">
+						        <div class="carousel-item active">
+						            <div class="view hm-black-light">
+						                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+						                <div class="mask"></div>
+						            </div>
+						            <div class="carousel-caption">
+						                <h3 class="h3-responsive">Light mask</h3>
+						                <p>First text</p>
+						            </div>
+						        </div>
+						        <div class="carousel-item">
+						            <!--Mask color-->
+						            <div class="view hm-black-strong">
+						                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+						                <div class="mask"></div>
+						            </div>
+						            <div class="carousel-caption">
+						                <h3 class="h3-responsive">Strong mask</h3>
+						                <p>Secondary text</p>
+						            </div>
+						        </div>
+						        <div class="carousel-item">
+						            <!--Mask color-->
+						            <div class="view hm-black-slight">
+						                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+						                <div class="mask"></div>
+						            </div>
+						            <div class="carousel-caption">
+						                <h3 class="h3-responsive">Slight mask</h3>
+						                <p>Third text</p>
+						            </div>
+						        </div>
+						    </div>
+						    <!--/.Slides-->
+						    <!--Controls-->
+						    <a class="carousel-control-prev" href="#carousel-front" role="button" data-slide="prev">
+						        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						        <span class="sr-only">Previous</span>
+						    </a>
+						    <a class="carousel-control-next" href="#carousel-front" role="button" data-slide="next">
+						        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						        <span class="sr-only">Next</span>
+						    </a>
+						    <!--/.Controls-->
+						</div>
+						<!--/.Carousel Wrapper-->
 
-                <!-- Collapsible content -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					</div>
 
-                    <!-- Links -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
+					<!-- lg & xl devices -->
+					<div class="boxRight col-lg-4 mt-4 d-none d-lg-block">
 
-                        <!-- Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+						<div class="row">
+							
+							<div class="logoBox col-lg-12">
+								<div class="box-item">
+									<img class="card-img img-fluid" src="src/img/shinchon logo-crop.jpg" alt="Card image">
+								</div>
+							</div>
+
+							<div class="noticeBox col-lg-6 mt-4">
+								<div class="box-item text-white text-center">
+									<img class="card-img img-fluid" src="src/img/crop_200x250.jpg" alt="Card image">
+				                    <div class="card-img-overlay">
+				                        <h4 class="card-title">NOTICE</h4>
+				                        <a href="#" class="boxItem-link">Read More..</a>
+				                    </div><!-- end card-img-overlay -->
+								</div>
+							</div>
+
+							<div class="onlineBox col-lg-6 mt-4">
+								<div class="box-item text-white text-center">
+									<img class="card-img img-fluid" src="src/img/crop_200x250.jpg" alt="Card image">
+				                    <div class="card-img-overlay">
+				                        <h4 class="card-title">ONLINE</h4>
+				                        <a href="#" class="boxItem-link">Read More..</a>
+				                    </div><!-- end card-img-overlay -->
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+					<!-- lg & xl devices -->
+					
+					<!-- md devices -->
+					<div class="boxRight container-fluid mt-4 d-none d-md-block d-lg-none">
+
+						<div class="row">
+							
+							<div class="logoBox col-md-4">
+								<div class="box-item">
+									<img class="card-img img-fluid" src="src/img/shinchon logo-crop.jpg" alt="Card image">
+								</div>
+							</div>
+
+							<div class="noticeBox col-md-4">
+								<div class="box-item text-white text-center">
+									<img class="card-img img-fluid" src="src/img/crop_294x80.jpg" alt="Card image">
+				                    <div class="card-img-overlay">
+				                        <p class="card-title"><a href="#" class="boxItem-link">NOTICE</a></p>
+				                        <!-- <a href="#" class="boxItem-link">Read More..</a> -->
+				                    </div><!-- end card-img-overlay -->
+								</div>
+							</div>
+
+							<div class="onlineBox col-md-4">
+								<div class="box-item text-white text-center">
+									<img class="card-img img-fluid" src="src/img/crop_294x80.jpg" alt="Card image">
+				                    <div class="card-img-overlay">
+				                        <p class="card-title"><a href="#" class="boxItem-link">ONLINE</a></p>
+				                        <!-- <a href="#" class="boxItem-link">Read More..</a> -->
+				                    </div><!-- end card-img-overlay -->
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+					<!-- md devices -->
+
+					<!-- xs & sm devices -->
+					<div class="boxRight container-fluid mt-4 d-sm-block d-md-none">
+
+						<div class="row">
+							
+							<div class="logoBox col-12 mb-4">
+								<div class="box-item">
+									<img class="card-img img-fluid" src="src/img/shinchon logo-crop.jpg" alt="Card image">
+								</div>
+							</div>
+
+							<div class="noticeBox col-6">
+								<div class="box-item text-white text-center">
+									<img class="card-img img-fluid" src="src/img/crop_300x200.jpg" alt="Card image">
+				                    <div class="card-img-overlay">
+				                        <h4 class="card-title">NOTICE</h4>
+				                        <a href="#" class="boxItem-link">Read More..</a>
+				                    </div><!-- end card-img-overlay -->
+								</div>
+							</div>
+
+							<div class="onlineBox col-6">
+								<div class="box-item text-white text-center">
+									<img class="card-img img-fluid" src="src/img/crop_300x200.jpg" alt="Card image">
+				                    <div class="card-img-overlay">
+				                        <h4 class="card-title">ONLINE</h4>
+				                        <a href="#" class="boxItem-link">Read More..</a>
+				                    </div><!-- end card-img-overlay -->
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+					<!-- xs & sm devices -->
+
+				</div><!-- end row -->
+			</div><!-- end container-fluid -->
+		</div><!-- end section-content -->
+	</section>
+	
+	<div class="container wow fadeInUp">
+		<div class="divider-new">
+			<h2> Our Clinic? </h2>
+		</div>
+		<p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium optio delectus aliquid vero! Cumque, eius.</p>
+	</div>
+	
+	
+	<!-- SECTION 2 : Main Cards & Side Boxes
+	====================================================== -->
+	<section id="frontMidBoxes" class="mt-5">
+		<div class="section-content">
+			<div class="container">
+				<div class="row">
+					
+					<!-- main -->
+					<div class="mainCard col-md-9 order-md-12">
+						
+						<div class="row">
+
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+							        	<div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a href="#" class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="0.5s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="0.6s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="0.7s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="0.8s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="0.9s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="1.0s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="1.1s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+							<div class="col-lg-4 col-6 mb-4 wow fadeInUp" data-wow-delay="1.2s">
+								<!--Card-->
+								<div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+								    <!-- Content -->
+								    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+								        <div>
+								            <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+								            <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+								            <a class="btn btn-pink"><i class="fa fa-clone left"></i> View project</a>
+								        </div>
+								    </div>
+								    <!-- Content -->
+								</div>
+								<!-- Card -->
+							</div>
+
+						</div><!-- end row -->
+
+					</div>
+					<!-- main -->
+
+					<!-- side -->
+					<div class="sideBox col-md-3 order-md-1">
+						
+						<div class="box-item mb-4 wow fadeInLeft">
+                            <div class="p-3">
+                                <h5 class="text-warning">Treatment1</h5>
+                                <div class="text-gray">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sed voluptas eum.</p>
+                                    <a href="#" class="btn btn-info">Click HERE!</a>
+                                </div>
                             </div>
-                        </li>
+                        </div><!-- end box-item -->
 
-                    </ul>
-                    <!-- Links -->
+                        <div class="box-item mb-4 wow fadeInLeft">
+                            <div class="p-3">
+                                <h5 class="text-warning">Treatment2</h5>
+                                <div class="text-gray">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid sed voluptas eum.</p>
+                                    <a href="#" class="btn btn-info">Click HERE!</a>
+                                </div>
+                            </div>
+                        </div><!-- end box-item -->
 
-                    <!-- Search form -->
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    </form>
-                </div>
-                <!-- Collapsible content -->
+                        <div class="box-item mb-4 wow fadeInLeft">
+                        	<div class="p-3">
+                        		<h5 class="text-warning">Infomations</h5>
+                        		<div class="text-muted">
+                        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, cupiditate.</p>
 
-            </div>
-        </nav>
-        <!--/.Navbar-->
+                        			<!-- Visible for over medium sized devices -->
+                        			<div class="row d-none d-md-none d-lg-block">
+                        				<div class="col-12 d-flex flex-row justify-conetn-start">
+                        					<span class="align-self-center">Hospital</span>
+                        					<a href="#" class="btn btn-primary btn-sm ml-auto">Click</a>
+                        				</div>
+                        				<div class="col-12 d-flex flex-row justify-conetn-start">
+                        					<span class="align-self-center">Intro</span>
+                        					<a href="#" class="btn btn-info btn-sm ml-auto">Click</a>
+                        				</div>
+                        				<div class="col-12 d-flex flex-row justify-conetn-start">
+                        					<span class="align-self-center">Review</span>
+                        					<a href="#" class="btn btn-warning btn-sm ml-auto">Click</a>
+                        				</div>
+                        			</div>
 
-    </header>
-    <!--Main Navigation-->
+                        			<!-- Visible only for small devices -->
+                        			<ul class="list-group d-md-block d-lg-none">
+                        				<a href="#"><li class="list-group-item list-group-item-primary">Hospital <span class="pull-right">&raquo;</span></li></a>
+                        				<a href="#"><li class="list-group-item list-group-item-info">Intro <span class="pull-right">&raquo;</span></li></a>
+                        				<a href="#"><li class="list-group-item list-group-item-warning">Review <span class="pull-right">&raquo;</span></li></a>
+                        			</ul>
 
-    <!--Main layout-->
-    <main class="mt-5">
+                        		</div>
+                        	</div>
+                        </div><!-- end box-item -->
 
-        <!--Main container-->
-        <div class="container">
-
-            <!--Grid row-->
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-7 mb-4">
-
-                    <!--Featured image -->
-                    <div class="view overlay hm-white-light z-depth-1-half">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" class="img-fluid " alt="">
-                        <div class="mask"></div>
-                    </div>
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-5 mb-4">
-
-                    <h2>Some awesome heading</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis pariatur quod ipsum atque quam dolorem
-                        voluptate officia sunt placeat consectetur alias fugit cum praesentium ratione sint mollitia, perferendis
-                        natus quaerat!</p>
-                    <a href="https://mdbootstrap.com/" class="btn btn-indigo">Get it now!</a>
-
-                </div>
-                <!--Grid column-->
-
-            </div>
-            <!--Grid row-->
-
-            <!--Grid row-->
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-12 mb-4">
-
-                    <!--Card-->
-                    <div class="card">
-
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(72).jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
+                        <div class="box-item bg-primary mb-4 wow fadeInLeft">
+                            <a href="reservation.html">
+                               <div class="p-3">
+                                   <h6 class="text-warning">Reservations!</h6>
+                                   <div class="text-white">
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam delectus.</p>
+                                       <p class="lead">Click HERE!!</p>
+                                   </div><!-- end text -->
+                               </div><!-- end p-3 -->
                             </a>
-                        </div>
+                        </div><!-- end box-item -->
 
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-indigo">Button</a>
-                        </div>
+                        <div class="social-link wow fadeInLeft">
+                        	<!-- Visible for over medium sized devices -->
+	                        <ul class="list-group d-none d-md-block">
+	                        	<li class="list-group-item list-group-item-success"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+	                        	<li class="list-group-item list-group-item-warning"><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> KakaoTalk</a></li>
+	                        </ul>
 
+	                        <!-- Visible only for small devices -->
+	                        <div class="box-item d-flex flex-nowrap d-block d-md-none no-gutters">
+	                        	<div class="col-6 d-inlie bg-success py-2 px-3"><a href="#"><i class="fa fa-facebook-official text-white"></i> <small class="text-white">Facebook</small></a></div>
+	                        	<div class="col-6 d-inlie bg-warning py-2 px-3"><a href="#"><i class="fa fa-comments-o text-white"></i> <small class="text-white">KakaoTalk</small></a></div>
+	                        </div>
+                        </div>
+                        
+					</div>
+					<!-- side -->
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- CONTACT MAP SECTION
+	====================================================== -->
+	<section id="contactMap" class="wow fadeInRight">
+
+		<div class="container">
+			<div class="row">
+
+				<div class="box-item address-info col-sm-6 col-md-5 p-5 my-5 d-none d-lg-block">
+
+					<!--Header-->
+                    <div class="form-header accent-1">
+                        <h3><i class="fa fa-envelope"></i> <b>Write to us!</b></h3>
                     </div>
-                    <!--/.Card-->
 
-                </div>
-                <!--Grid column-->
+                    <br>
 
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4">
-
-                    <!--Card-->
-                    <div class="card">
-
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(74).jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-indigo">Button</a>
-                        </div>
-
+                    <!--Body-->
+                    <div class="md-form">
+                        <i class="fa fa-user prefix grey-text"></i>
+                        <input type="text" id="form-name" class="form-control">
+                        <label for="form-name">Your name</label>
                     </div>
-                    <!--/.Card-->
 
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4">
-
-                    <!--Card-->
-                    <div class="card">
-
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(75).jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-indigo">Button</a>
-                        </div>
-
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="text" id="form-email" class="form-control">
+                        <label for="form-email">Your email</label>
                     </div>
-                    <!--/.Card-->
 
-                </div>
-                <!--Grid column-->
+                    <div class="md-form">
+                        <i class="fa fa-tag prefix grey-text"></i>
+                        <input type="text" id="form-Subject" class="form-control">
+                        <label for="form-Subject">Subject</label>
+                    </div>
 
-            </div>
-            <!--Grid row-->
+                    <div class="md-form">
+                        <i class="fa fa-pencil prefix grey-text"></i>
+                        <textarea type="text" id="form-text" class="md-textarea"></textarea>
+                        <label for="form-text">Icon Prefix</label>
+                    </div>
 
-        </div>
-        <!--Main container-->
+                    <div class="text-center">
+                        <button class="btn btn-light-blue">Submit</button>
+                    </div>
 
-    </main>
-    <!--Main layout-->
+				</div><!-- end address-info -->
+			</div>
 
-    <!--Footer-->
-    <footer class="page-footer indigo center-on-small-only">
+			<div class="row justify-content-center">
+				<!-- Visible only on small devices -->
+				<div class="box-item d-block d-lg-none address-info-mobile mx-auto py-2 px-4">
+					<p class="lead"><b>Parking zone:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</div>
 
-        <!--Footer Links-->
-        <div class="container">
-            <div class="row">
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.1173532633356!2d126.93130785049085!3d37.55229883260261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98bf7130ff61%3A0x7bd239eba070f3b6!2z7ISc7Jq47Yq567OE7IucIOuniO2PrOq1rCDshJzqsJXroZwgMTA2!5e0!3m2!1sko!2skr!4v1510192660690" width="100%" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 
-                <!--First column-->
-                <div class="col-md-6">
-                    <h5 class="title">Footer Content</h5>
-                    <p>Here you can use rows and columns here to organize your footer content.</p>
-                </div>
-                <!--/.First column-->
+	</section>
 
-                <!--Second column-->
-                <div class="col-md-6">
-                    <h5 class="title">Links</h5>
-                    <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <!--/.Second column-->
-            </div>
-        </div>
-        <!--/.Footer Links-->
+	<!-- Footer
+    ====================================================== -->
+    <section id="footer" class="py-3 wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 my-3">
+          	<nav class="nav nav-pills nav-justified">
+          		<a class="nav-item nav-link active" href="#">Link1</a>
+          		<a class="nav-item nav-link" href="#">Link2</a>
+          		<a class="nav-item nav-link" href="#">Link3</a>
+          		<a class="nav-item nav-link" href="#">Link4</a>
+          	</nav>
+          </div>
 
-        <!--Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2015 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+          <div class="col-md-6 my-3">
+			<small class="copyright text-white">&copy; 2014-2017 Lorem ipsum | All rights reserved. | Tel 051-111-1111</small> <small class="text-white"> | Kakaotalk ID <a class="text-warning" href="https://pf.kakao.com/_yxnxhkV">@your_katalk_ID</a> | Email: jdoe@email.com</small>
+          </div>
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </section><!-- end footer -->
 
-            </div>
-        </div>
-        <!--/.Copyright-->
+	
+	<!-- Bootstrap Core JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
 
-    </footer>
-    <!--/.Footer-->
+	<!-- Effect JS -->
+	<script src="assets/js/lightbox.min.js"></script>
+	<script src="assets/js/mdb.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+	<!-- Custom JS -->
+	<script src="assets/js/custom.min.js"></script>
+	
 </body>
-
 </html>

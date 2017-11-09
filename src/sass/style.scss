@@ -1,0 +1,120 @@
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+a {
+	color: white;
+}
+
+/* Footer */
+#footer {
+   background-color: #333;
+}
+
+nav a:hover {
+   color: #f8bbd0;
+}
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+/* General */
+.section-content {
+    padding: 4rem 0;
+}
+
+/* Box item */
+.box-item {
+   position: relative;
+   overflow: hidden;
+   border:1px solid #ddd;
+   transition: 0.5s;
+
+   img {
+      display: block;
+   }
+
+   div.card-img-overlay {
+      position: absolute;
+      top: 100%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      padding: 2em;
+      background: rgba(234, 128, 252, .75);
+      color: white;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      transition: top ease-in-out 250ms;
+   }
+
+   &:hover div.card-img-overlay,
+   &:focus div.card-img-overlay {
+      top:0;
+   }
+
+   &:hover {
+    	box-shadow: 0 0 8px rgba(0, 0, 0, .18), 0 8px 16px rgba(0, 0, 0, .36);
+	}
+}
+
+h4.card-title {
+  margin-bottom: auto;
+}
+
+a.boxItem-link {
+  color: white;
+  font-weight: bold;
+  border-bottom: 3px solid white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  // align-self: flex-start;
+
+  // &::after {
+  //   content: url(../../src/img/svg/arrow_right.svg);
+  //   display: inline-block;
+  //   width: .5em;
+  //   height: .5em;
+  //   margin-left: .5em;
+  // }
+}
+
+/* Map */
+.address-info {
+   position: absolute;
+   top: 20px;
+   right: 50px;
+   height: auto;
+   background-color: rgba(255, 255, 255, 0.8);
+   z-index: 3;
+   &:hover {
+      background-color: rgb(255, 255, 255);
+   }
+}
+
+.address-info-mobile {
+   position: absolute;
+   width: 75%;
+   bottom: 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+   z-index: 3;
+   &:hover {
+      background-color: rgb(255, 255, 255);
+   }
+}
+
+#contactMap {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 700px;
+   overflow: hidden;
+   display: block;
+}
