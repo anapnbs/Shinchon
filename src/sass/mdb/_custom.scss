@@ -26,14 +26,19 @@ $border-radius-extreme: 30px !default;
 /* Shadow Effects */
 // Layout customization
 .main {
-	border-radius: $border-radius-base * 2;
+    position: relative;
+    z-index: 3;
+    background: #FFFFFF;
     @include shadow-16dp();
-}
 
-.main-raised{
-    margin: -60px 30px 0px;
-    border-radius: $border-radius-base * 2;
-    @include shadow-16dp();
+    &.main-raised-square {
+        margin: -60px 30px 0px;
+    }
+
+    &.main-raised-rounded {
+        margin: -60px 30px 0px;
+        border-radius: $border-radius-base * 2;
+    }
 }
 
 // Navbar customization
@@ -64,36 +69,13 @@ $border-radius-extreme: 30px !default;
 .btn {
 	@include shadow-2dp();
 }
+.btn-rounded {
+    border-radius: 10em;
+}
 
 // Image customization
 .img-raised {
 	@include shadow-big();
-}
-
-/* Center Align */
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    p {
-        margin: 0;
-    }
-    ul {
-        text-align: center;
-        li {
-            margin-bottom: 1rem;
-        }
-    }
-}
-
-.vertical-center {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 /* Dividers */

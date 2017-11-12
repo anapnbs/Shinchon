@@ -7,13 +7,25 @@
    box-sizing: border-box;
 }
 
+body {
+  background-color: #E5E5E5; 
+
+  &.front-page {
+    background-color: white;
+  } 
+}
+
 a {
 	color: white;
 }
 
 /* Footer */
 #footer {
-   background-color: #333;
+  background: #333; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#E5E5E5, #333); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#E5E5E5, #333); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#E5E5E5, #333); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#E5E5E5, #333); /* Standard syntax */
 }
 
 nav a:hover {
@@ -74,15 +86,6 @@ a.boxItem-link {
   border-bottom: 3px solid white;
   font-size: 1.1rem;
   text-decoration: none;
-  // align-self: flex-start;
-
-  // &::after {
-  //   content: url(../../src/img/svg/arrow_right.svg);
-  //   display: inline-block;
-  //   width: .5em;
-  //   height: .5em;
-  //   margin-left: .5em;
-  // }
 }
 
 /* Map */
@@ -117,4 +120,21 @@ a.boxItem-link {
    height: 700px;
    overflow: hidden;
    display: block;
+}
+
+/* Jumbotron */
+#jumbotron {
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+  background-color: #fff;
+
+  .container {
+    max-width: 40rem;
+    background: rgba(255, 255, 255, .3);
+    padding: 2rem;
+  }
+
+  p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  }
 }

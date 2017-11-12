@@ -6,12 +6,26 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  background-color: #E5E5E5; }
+  body.front-page {
+    background-color: white; }
+
 a {
   color: white; }
 
 /* Footer */
 #footer {
-  background-color: #333; }
+  background: #333;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#E5E5E5, #333);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#E5E5E5, #333);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#E5E5E5, #333);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#E5E5E5, #333);
+  /* Standard syntax */ }
 
 nav a:hover {
   color: #f8bbd0; }
@@ -88,3 +102,15 @@ a.boxItem-link {
   height: 700px;
   overflow: hidden;
   display: block; }
+
+/* Jumbotron */
+#jumbotron {
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+  background-color: #fff; }
+  #jumbotron .container {
+    max-width: 40rem;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 2rem; }
+  #jumbotron p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }

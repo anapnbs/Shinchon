@@ -4048,36 +4048,6 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
   .bq-success .bq-title {
     color: #00C851; }
 
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Thin), url("../font/roboto/Roboto-Thin.eot");
-  src: url("../font/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
-  font-weight: 200; }
-
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Light), url("../font/roboto/Roboto-Light.eot");
-  src: url("../font/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Light.woff2") format("woff2"), url("../font/roboto/Roboto-Light.woff") format("woff"), url("../font/roboto/Roboto-Light.ttf") format("truetype");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Regular), url("../font/roboto/Roboto-Regular.eot");
-  src: url("../font/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Regular.woff2") format("woff2"), url("../font/roboto/Roboto-Regular.woff") format("woff"), url("../font/roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Medium.eot");
-  src: url("../font/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Medium.woff2") format("woff2"), url("../font/roboto/Roboto-Medium.woff") format("woff"), url("../font/roboto/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Bold.eot");
-  src: url("../font/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Bold.woff2") format("woff2"), url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700; }
-
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
@@ -4170,29 +4140,6 @@ h6 {
 
 .fs-5 {
   font-size: 3rem !important; }
-
-.divider-new {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-weight: 300;
-  margin-top: 45px;
-  margin-bottom: 45px; }
-  .divider-new h2 {
-    margin-top: 5px; }
-  .divider-new:before {
-    content: '';
-    height: 1.5px;
-    background: #c6c6c6;
-    flex: 1;
-    margin: 0 .45em 0 0; }
-  .divider-new:after {
-    content: '';
-    height: 1.5px;
-    background: #c6c6c6;
-    flex: 1;
-    margin: 0 0 0 .45em; }
 
 blockquote {
   padding: .5rem 1rem;
@@ -6507,13 +6454,15 @@ table.table-sm td {
 /* Shadows (from mdl http://www.getmdl.io/) */
 /* Shadow Effects */
 .main {
-  border-radius: 6px;
+  position: relative;
+  z-index: 3;
+  background: #FFFFFF;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
-
-.main-raised {
-  margin: -60px 30px 0px;
-  border-radius: 6px;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+  .main.main-raised-square {
+    margin: -60px 30px 0px; }
+  .main.main-raised-rounded {
+    margin: -60px 30px 0px;
+    border-radius: 6px; }
 
 .navbar {
   box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
@@ -6534,28 +6483,11 @@ table.table-sm td {
 .btn {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
+.btn-rounded {
+  border-radius: 10em; }
+
 .img-raised {
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
-
-/* Center Align */
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; }
-  .flex-center p {
-    margin: 0; }
-  .flex-center ul {
-    text-align: center; }
-    .flex-center ul li {
-      margin-bottom: 1rem; }
-
-.vertical-center {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%); }
 
 /* Dividers */
 .hr-light {
