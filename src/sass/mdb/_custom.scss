@@ -76,6 +76,17 @@ $border-radius-extreme: 30px !default;
 // Image customization
 .img-raised {
 	@include shadow-big();
+
+    &.img-square {
+        margin: -20px 10px 0;
+        width: 95%;
+    }
+
+    &.img-rounded {
+        margin: -20px 10px 0;
+        width: 95%;
+        border-radius: $border-radius-base * 2;
+    }
 }
 
 /* Dividers */
