@@ -6452,6 +6452,9 @@ table.table-sm td {
   padding-bottom: 0.6rem; }
 
 /* Shadows (from mdl http://www.getmdl.io/) */
+.bg-beige {
+  background-color: #FAF0CA; }
+
 /* Shadow Effects */
 .main {
   position: relative;

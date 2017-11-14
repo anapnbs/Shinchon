@@ -51,14 +51,13 @@ nav a:hover {
   padding: 4rem 0; }
 
 /* Box item */
-.box-item {
+.box-item, .box-item-raised {
   position: relative;
   overflow: hidden;
-  border: 1px solid #ddd;
-  transition: 0.5s; }
-  .box-item img {
+  border: 1px solid #ddd; }
+  .box-item img, .box-item-raised img {
     display: block; }
-  .box-item div.card-img-overlay {
+  .box-item div.card-img-overlay, .box-item-raised div.card-img-overlay {
     position: absolute;
     top: 100%;
     bottom: 0;
@@ -71,10 +70,13 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     transition: top ease-in-out 250ms; }
-  .box-item:hover div.card-img-overlay,
-  .box-item:focus div.card-img-overlay {
+  .box-item:hover div.card-img-overlay, .box-item-raised:hover div.card-img-overlay,
+  .box-item:focus div.card-img-overlay, .box-item-raised:focus div.card-img-overlay {
     top: 0; }
-  .box-item:hover {
+
+.box-item-raised {
+  transition: 0.5s; }
+  .box-item-raised:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
 
 h4.card-title {
@@ -86,6 +88,28 @@ a.boxItem-link {
   border-bottom: 3px solid white;
   font-size: 1.1rem;
   text-decoration: none; }
+
+.post-summary-date {
+  text-decoration: none;
+  padding: 14px 0 11px 0;
+  color: #FFF;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  transition: opacity .33s;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22); }
+  .post-summary-date:hover {
+    opacity: .75; }
+  .post-summary-date .post-summary-mon {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .post-summary-date .post-summary-day {
+    display: block;
+    font-size: 2.02rem;
+    font-weight: 700; }
 
 /* Map */
 .address-info {
@@ -159,12 +183,6 @@ a.boxItem-link {
     top: 0; }
 
 .post-meta {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 900px;
-  clear: both;
-  overflow: hidden;
   margin: 20px 0;
   padding: 5px 0;
   border-top: 1px solid #e7e6e6;
